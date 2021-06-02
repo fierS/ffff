@@ -1,0 +1,167 @@
+<HTM>
+<HEAD>
+<TITLE>Operation Shattered Web</TITLE>
+<style>
+	body {
+		background: #000 url(6.jpg); 
+		color: #FFFFFF; 
+		background-attachment: fixed; 
+		background-repeat: repeat-x; 
+	}
+   </style>
+
+<script type="text/javascript">
+  var array = new Array(
+    "100.png",
+    "101.png",
+    "102.png",
+    "103.png"
+  );
+  var i = 0;
+  function left() {
+    var image = document.getElementById("rotatorbutton");
+    i--;
+    if (i < 0) i = array.length - 1;
+    image.src = array[i];
+  }
+  function right() {
+    var image = document.getElementById("rotatorbutton");
+    i++;
+    if (i == array.length) i = 0;
+    image.src = array[i];
+  }
+</script>
+
+
+<meta charset="utf-8">
+    <title>Название документа</title>
+    <style>
+      #navbar ul{
+        display: none;
+        background-color: #DAA520;
+        position: absolute;
+        top: 100%;
+      }
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin:  0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 30px;
+        background-color: #4B0082;
+        padding-left: 50px;
+        min-width: 470px;
+      }
+      #navbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      #navbar ul li { float: none; }
+      #navbar li:hover { background-color: #DAA520; }
+      #navbar ul li:hover { background-color: #4B0082; }
+    </style>
+
+<script>
+  var months = new Array(13);
+  months[1]="января"; months[2]="февраля"; months[3]="марта"; months[4]="апреля"; months[5]="мая"; months[6]="июня"; months[7]="июля"; months[8]="августа"; months[9]="сентября"; months[10]="октября"; months[11]="ноября"; months[12]="декабря";
+
+  var time = new Date();
+  var thismonth = months[time.getMonth() + 1];
+  var date = time.getDate();
+  var thisyear = time.getYear();
+  var day = time.getDay() + 1;
+
+  if (thisyear < 2000)
+      thisyear = thisyear + 1900;
+  if (day == 1) DayofWeek = "Воскресенье";
+  if (day == 2) DayofWeek = "Понедельник";
+  if (day == 3) DayofWeek = "Вторник";
+  if (day == 4) DayofWeek = "Среда";
+  if (day == 5) DayofWeek = "Четверг";
+  if (day == 6) DayofWeek = "Пятница";
+  if (day == 7) DayofWeek = "Суббота";
+</script>
+            
+<script>           
+setInterval(function() {
+  var cd = new Date();
+  var clockdat = document.getElementById("clockdat");
+  clockdat.innerHTML = cd.toLocaleTimeString();
+}, 1000);
+</script>
+
+<body    
+<div class="center" style="background-color: #C0C0C0; padding:5px;">
+  <span style="color:Silver">Сегодня:</span>
+  <span style="color:Silver; font-size:14px;">
+  <script>
+      document.write(date+" ");
+      document.write(thismonth+ " "+thisyear+" "+"года"+" — "+ DayofWeek);
+  </script>
+  (<span id="clockdat" style="color:Silver;"></span>)
+  </span>
+</div>
+</body
+
+</HEAD>
+<BODY TOPMARGIN=50 BOTTOMMARGIN=100 LEFTMARGIN=100 RIGHTMARGIN=100 BACKGROUND="6.jpg" TEXT="WHITE">
+<H1 ALIGN=CENTER><FONT SIZE=7>Operation Shattered Web</H1>
+<FONT COLOR="#FFFFE0" SIZE=5>
+
+<ul id="navbar">
+      <li><A HREF="index.html">Blog</A></li>
+      <li><a href="#">Updates</a>
+        <ul>
+          <li><A HREF="Operation Shattered Web.htm">Operation Shattered Web</A></li>
+          <li><A HREF="CS GO Danger Zone.htm">CS:GO Danger Zone</A></li>
+          <li><A HREF="Historique Dust II.htm">Historique Dust II</A></li>
+        </ul>
+      </li>
+      
+    </ul>
+
+<P ALIGN=CENTER><IMG SRC="7.png" HEIGHT="400" WIDTH="700" USEMAP="7.png#операция"></P>
+<MAP NAME="операция"> <AREA SHAPE="rect" COORDS="0,0,700,700" TITLE="Shattered Web" HREF="http://counter-strike.net/shatteredweb" TARGET="_BLANK"
+<P> Представляем операцию «Расколотая сеть». Впервые в CS:GO: ведите в бой своего любимого персонажа, выбрав одного из новых агентов. Получайте других персонажей, раскраски оружия из новых коллекций, наклейки, граффити и многое другое в формате нового боевого пропуска.
+<P>Также мы увеличили стоимость винтовки SG 553. Стоимость Krieg теперь составляет $ 3000 — это его прежняя цена, которая использовалась до 2018 года.
+<P>Впервые за два года Valve выпустила новую операцию для CS:GO — Shattered Web. Она добавляет в игру специальных персонажей, называемых «агентами». Использовать их могут и террористы, и спецназ. Чтобы разблокировать их, игрокам понадобится пройти миссии операции и заработать звезды. За выполнение миссий пользователи также получат награды в виде скинов коллекций Shattered Web, Norse, St Marc и Canals. С основным списком изменений можно ознакомиться ниже.
+
+<P><FONT COLOR="#FFFFE0"><H3 ALIGN=CENTER>Новые коллекции оружия</H3></FONT>
+
+<center>
+ <table>
+  <tr>
+    <td>
+      <input type = 'button' name = 'left' value = '<' onclick = 'left()' />
+    </td>
+    <td>
+      <script type = 'text/javascript'>
+        document.write("<img id = 'rotatorbutton' src = '" + array[0] + "' alt = 'Ротатор изображений с кнопками' width = '750' height = '500' />");
+      </script>
+    </td>
+    <td>
+      <input type = 'button' name = 'right' value = '>' onclick = 'right()' />
+    </td>
+  </tr>
+</table>
+</center>
+
+<P><FONT COLOR="#FFFFE0"><H3 ALIGN=CENTER>Коллекция наклеек «Расколотая сеть»</H3></FONT>
+<P ALIGN=CENTER><IMG SRC="107.png" HEIGHT="500" WIDTH="750" USEMAP="107.png#Коллекция наклеек «Расколотая сеть»">
+<MAP NAME="Коллекция наклеек «Расколотая сеть»"> <AREA SHAPE="rect" COORDS="0,0,700,700" TITLE="Коллекция наклеек «Расколотая сеть»" HREF="https://steamcommunity.com/market/search?q=&category_730_ItemSet%5B%5D=any&category_730_ProPlayer%5B%5D=any&category_730_StickerCapsule%5B%5D=tag_crate_sticker_pack_shattered_web_lootlist&category_730_TournamentTeam%5B%5D=any&category_730_Weapon%5B%5D=any&appid=730#p1_price_asc" TARGET="_BLANK"
+<P><FONT COLOR="#FFFFE0"><H3 ALIGN=CENTER>Коллекция агентов «Расколотая сеть»</H3></FONT>
+<P ALIGN=CENTER><IMG SRC="576.jpg" HEIGHT="500" WIDTH="750">
+
+</BODY>
+</HTM>

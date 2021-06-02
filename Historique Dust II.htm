@@ -1,0 +1,162 @@
+<HTM>
+<HEAD>
+<TITLE>Historique Dust II</TITLE>
+<style>
+	body {
+		background: #000 url(10.jpg); 
+		color: #FFFFFF; 
+		background-attachment: fixed; 
+		background-repeat: repeat-x; 
+	}
+   </style>
+
+<script type="text/javascript">
+  var array = new Array(
+    "777.png",
+    "778.png",
+    "779.png",
+    "780.png",
+    "781.png"
+  );
+  var i = 0;
+  function left() {
+    var image = document.getElementById("rotatorbutton");
+    i--;
+    if (i < 0) i = array.length - 1;
+    image.src = array[i];
+  }
+  function right() {
+    var image = document.getElementById("rotatorbutton");
+    i++;
+    if (i == array.length) i = 0;
+    image.src = array[i];
+  }
+</script>
+
+<meta charset="utf-8">
+    <title>Название документа</title>
+    <style>
+      #navbar ul{
+        display: none;
+        background-color: #DAA520;
+        position: absolute;
+        top: 100%;
+      }
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin:  0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 30px;
+        background-color: #20B2AA;
+        padding-left: 50px;
+        min-width: 470px;
+      }
+      #navbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      #navbar ul li { float: none; }
+      #navbar li:hover { background-color: #DAA520; }
+      #navbar ul li:hover { background-color: #20B2AA; }
+    </style>
+
+<script>
+  var months = new Array(13);
+  months[1]="января"; months[2]="февраля"; months[3]="марта"; months[4]="апреля"; months[5]="мая"; months[6]="июня"; months[7]="июля"; months[8]="августа"; months[9]="сентября"; months[10]="октября"; months[11]="ноября"; months[12]="декабря";
+
+  var time = new Date();
+  var thismonth = months[time.getMonth() + 1];
+  var date = time.getDate();
+  var thisyear = time.getYear();
+  var day = time.getDay() + 1;
+
+  if (thisyear < 2000)
+      thisyear = thisyear + 1900;
+  if (day == 1) DayofWeek = "Воскресенье";
+  if (day == 2) DayofWeek = "Понедельник";
+  if (day == 3) DayofWeek = "Вторник";
+  if (day == 4) DayofWeek = "Среда";
+  if (day == 5) DayofWeek = "Четверг";
+  if (day == 6) DayofWeek = "Пятница";
+  if (day == 7) DayofWeek = "Суббота";
+</script>
+            
+<script>           
+setInterval(function() {
+  var cd = new Date();
+  var clockdat = document.getElementById("clockdat");
+  clockdat.innerHTML = cd.toLocaleTimeString();
+}, 1000);
+</script>
+
+<body    
+<div class="center" style="background-color: #C0C0C0; padding:5px;">
+  <span style="color:Silver">Сегодня:</span>
+  <span style="color:Silver; font-size:14px;">
+  <script>
+      document.write(date+" ");
+      document.write(thismonth+ " "+thisyear+" "+"года"+" — "+ DayofWeek);
+  </script>
+  (<span id="clockdat" style="color:Silver;"></span>)
+  </span>
+</div>
+</body
+
+</HEAD>
+<BODY TOPMARGIN=50 BOTTOMMARGIN=100 LEFTMARGIN=100 RIGHTMARGIN=100 BACKGROUND="10.jpg" TEXT="WHITE">
+<H1 ALIGN=CENTER><FONT SIZE=7 COLOR="#20B2AA">Historique Dust II</H1>
+<FONT COLOR="#FFFFFF" SIZE=5>
+
+<ul id="navbar">
+      <li><A HREF="index.html">Blog</A></li>
+      <li><a href="#">Updates</a>
+        <ul>
+          <li><A HREF="Operation Shattered Web.htm">Operation Shattered Web</A></li>
+          <li><A HREF="CS GO Danger Zone.htm">CS:GO Danger Zone</A></li>
+          <li><A HREF="Historique Dust II.htm">Historique Dust II</A></li>
+        </ul>
+      </li>
+      
+    </ul>
+
+<P>Впервые Dust 2 была добавлена в версию Counter-Strike 1.1. Действия карты отправляют игроков на Ближний Восток, о чем говорят не только надписи на Персидском языке, но и модельки террористов, защищенных от песчаных бурь. За 20 лет существования карты в ней не происходило существенных изменений. Структура карты сохранилась с самого первого появления, мало чем отличаясь от предшественников.
+<P>Все глобальные изменения касались текстур, внешнего окружения и предметов, что неудивительно с выходом Counter-Strike: Global Offensive. В остальном, карта навсегда вошла в обиход завсегдатаев серии.
+<P>Два года назад карта подверглась существенной переработке. Основой изменений стали улучшенная графика, а также возвращение простреливаемых дверей. Месторасположение точек закладки бомбы и спавна противоборствующих сторон плавно перекочевали из Counter-Strike 1.1 в CS:GO.
+<P>Пожалуй, Dust II можно назвать ключевой картой CS:GO: она считалась классикой с самой первой версии. Эта карта отражает сущность CS, и в сегодняшнем обновлении мы стремились уважить самую её основу, избавив при этом от очевидных недостатков. Мы поставили перед собой следующие цели:
+<P>-Улучшить видимость игроков по всей карте
+<P>-Сгладить передвижение и укрытия
+<P>-Поднять графическую составляющую до уровня современных карт
+<P>Dust II уже доступна всем! Спасибо за ваши отзывы во время бета-теста. Ниже вы увидите ключевые изменения карты. Чтобы проследить за изменениями, воспользуйтесь ползунками.
+<center><P><FONT COLOR="#20B2AA"><H2>Изменения</H2></FONT>
+
+<center>
+ <table>
+  <tr>
+    <td>
+      <input type = 'button' name = 'left' value = '<' onclick = 'left()' />
+    </td>
+    <td>
+      <script type = 'text/javascript'>
+        document.write("<img id = 'rotatorbutton' src = '" + array[0] + "' alt = 'Ротатор изображений с кнопками' width = '750' height = '500' />");
+      </script>
+    </td>
+    <td>
+      <input type = 'button' name = 'right' value = '>' onclick = 'right()' />
+    </td>
+  </tr>
+</table>
+</center>
+</BODY>
+</HTM>
