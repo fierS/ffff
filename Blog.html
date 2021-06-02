@@ -1,0 +1,212 @@
+<HTML>
+<HEAD>
+<TITLE>Counter-Strike: Global Offensive</TITLE>
+   <style>
+	body {
+		background: #000 url(2.jpeg); 
+		color: #DAA520; 
+		background-attachment: fixed; 
+		background-repeat: repeat-x; 
+	}
+   </style>
+
+<script type="text/javascript">
+  var array = new Array(
+    "50.png",
+    "51.png",
+    "52.png",
+    "53.png",
+    "54.png",
+    "55.png",
+    "56.png"
+  );
+  var i = 0;
+  function left() {
+    var image = document.getElementById("rotatorbutton");
+    i--;
+    if (i < 0) i = array.length - 1;
+    image.src = array[i];
+  }
+  function right() {
+    var image = document.getElementById("rotatorbutton");
+    i++;
+    if (i == array.length) i = 0;
+    image.src = array[i];
+  }
+</script>
+
+<script>
+  var months = new Array(13);
+  months[1]="января"; months[2]="февраля"; months[3]="марта"; months[4]="апреля"; months[5]="мая"; months[6]="июня"; months[7]="июля"; months[8]="августа"; months[9]="сентября"; months[10]="октября"; months[11]="ноября"; months[12]="декабря";
+
+  var time = new Date();
+  var thismonth = months[time.getMonth() + 1];
+  var date = time.getDate();
+  var thisyear = time.getYear();
+  var day = time.getDay() + 1;
+
+  if (thisyear < 2000)
+      thisyear = thisyear + 1900;
+  if (day == 1) DayofWeek = "Воскресенье";
+  if (day == 2) DayofWeek = "Понедельник";
+  if (day == 3) DayofWeek = "Вторник";
+  if (day == 4) DayofWeek = "Среда";
+  if (day == 5) DayofWeek = "Четверг";
+  if (day == 6) DayofWeek = "Пятница";
+  if (day == 7) DayofWeek = "Суббота";
+</script>
+            
+<script>           
+setInterval(function() {
+  var cd = new Date();
+  var clockdat = document.getElementById("clockdat");
+  clockdat.innerHTML = cd.toLocaleTimeString();
+}, 1000);
+</script>
+
+<body    
+<div class="center" style="background-color: #C0C0C0; padding:5px;">
+  <span style="color:Silver">Сегодня:</span>
+  <span style="color:Silver; font-size:14px;">
+  <script>
+      document.write(date+" ");
+      document.write(thismonth+ " "+thisyear+" "+"года"+" — "+ DayofWeek);
+  </script>
+  (<span id="clockdat" style="color:Silver;"></span>)
+  </span>
+</div>
+</body
+
+<meta charset="utf-8">
+    <title>Название документа</title>
+    <style>
+      #navbar ul{
+        display: none;
+        background-color: #DAA520;
+        position: absolute;
+        top: 100%;
+      }
+      #navbar li:hover ul { display: block; }
+      #navbar, #navbar ul{
+        margin:  0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #navbar {
+        height: 30px;
+        background-color: #4682B4;
+        padding-left: 50px;
+        min-width: 470px;
+      }
+      #navbar li {
+        float: left;
+        position: relative;
+        height: 100%;
+      }
+      #navbar li a {
+        display: block;
+        padding: 6px;
+        width: 100px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      #navbar ul li { float: none; }
+      #navbar li:hover { background-color: #DAA520; }
+      #navbar ul li:hover { background-color: #4682B4; }
+    </style>
+
+</HEAD>
+<BODY TOPMARGIN=50 BOTTOMMARGIN=100 LEFTMARGIN=100 RIGHTMARGIN=100 TEXT="WHITE">
+<H1 ALIGN=CENTER><FONT SIZE=7 COLOR="#DAA520">Counter-Strike: Global Offensive</H1>
+<FONT COLOR="#FFFFE0" SIZE=5>
+<ul id="navbar">
+      <li><a href="#">Blog</a></li>
+<meta http-equiv="refresh" content="-1">
+      <li><a href="#">Updates</a>
+        <ul>
+          <li><A HREF="Operation Shattered Web.htm">Operation Shattered Web</A></li>
+          <li><A HREF="CS GO Danger Zone.htm">CS:GO Danger Zone</A></li>
+          <li><A HREF="Historique Dust II.htm">Historique Dust II</A></li>
+        </ul>
+      </li>
+      
+    </ul>
+<P><FONT COLOR="#FF0000"><MARQUEE BEHAVIOR="ALTERNATE" SCROLLAMOUNY=15"DIRECTION="RIGHT">Конец операции «Сломанный клык»</MARQUEE>
+<P ALIGN=CENTER><IMG SRC="3.jpg" HEIGHT="500" WIDTH="750" USEMAP="3.jpg#Counter-Strike: Global Offensive">
+<MAP NAME="Counter-Strike: Global Offensive"> <AREA SHAPE="circle" COORDS="0,0,500,700" TITLE="Counter-Strike: Global Offensive" HREF="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" TARGET="_BLANK"></MAP>
+<P ALIGN=LEFT><FONT COLOR="#FFFFFF">Сегодня завершается операция «Сломанный клык», однако некоторые из наиболее популярных элементов будут и далее использоваться в игре. Обратите внимание: вы можете потратить неиспользованные звёзды до 15 мая. После этой даты они будут недействительны.
+<P>Соревновательный премьер-режим и режим «Зачистка» были очень популярны и поэтому останутся в игре. Как и прежде, вы можете найти соревновательный премьер-режим во вкладке соревновательного режима, а «Зачистка» теперь доступна во вкладке «Военные игры».
+<P>Если вы хотите продолжать собирать свою официальную статистику в соревновательном режиме и режиме «Напарники» (или если вы не участвовали в операции «Сломанный клык», но хотите опробовать функцию статистики), вы можете подписаться на «Статистику CS:GO 360» за 76 рублей в месяц. «Статистика CS:GO 360» включает в себя доступ к странице статистики, а также отчёт о вероятности победы вашей команды в раундах в соревновательном режиме и премьер-режиме. Дополнительную информацию можно найти в статье «Статистика CS:GO 360».
+<P><FONT COLOR="#DAA520"><H3>Изменения в картах</H3></FONT>
+<P>В рамках сегодняшнего обновления мы вносим изменения в карты передовой. Карта Train выбывает из игры, а её место занимает Ancient с обновлённой точкой A и с небольшими изменениями точки B.
+<P>Мы также обновляем доступные в игре карты сообщества. Mocha и Grind теперь доступны в соревновательном режиме «Схватка», а также в других режимах игры в разделе разминирования, группа «Сигма».
+<P ALIGN=CENTER><IMG SRC="4.jpg" HEIGHT="500" WIDTH="750">
+<P>Кроме того, Calavera и Pitstop теперь доступны для игры в режиме «Напарники».
+<P ALIGN=CENTER><IMG SRC="5.jpg" HEIGHT="500" WIDTH="750">
+<P>Новый оружейный кейссссс
+Оружейный кейс «Змеиный укус» включает в себя 17 раскрасок оружия, созданных сообществом, а также перчатки из коллекции «Сломанный клык» в качестве особо редкого предмета!
+
+<center>
+ <table>
+  <tr>
+    <td>
+      <input type = 'button' name = 'left' value = '<' onclick = 'left()' />
+    </td>
+    <td>
+      <script type = 'text/javascript'>
+        document.write("<img id = 'rotatorbutton' src = '" + array[0] + "' alt = 'Ротатор изображений с кнопками' width = '750' height = '500' />");
+      </script>
+    </td>
+    <td>
+      <input type = 'button' name = 'right' value = '>' onclick = 'right()' />
+    </td>
+  </tr>
+</table>
+</center>
+
+
+
+<P><style type="text/css">
+    table {
+        border-collapse: collapse;
+    }
+    table th,
+    table td {
+        padding: 10 60 3px;
+    }
+    table.brd th,
+    table.brd td {
+        border: 3px solid #BDB76B;
+    }
+
+</style>
+<h3><FONT COLOR="#DAA520">Топ игр по онлайну</h3>
+<table class="brd">
+    <tr>
+        <th><FONT COLOR="#C0C0C0">Пиковый онлайн</th>
+        <th><FONT COLOR="#C0C0C0">Игра</th>
+    </tr>
+    <tr>
+        <td><FONT COLOR="#F0FFF0">1,029,897</td>
+        <td><FONT COLOR="#FFF0F5">Counter-Strike: Global Offensive</td>
+    </tr>
+    <tr>
+        <td><FONT COLOR="#F0FFF0">668,346</td>
+        <td><FONT COLOR="#FFF0F5">Dota 2</td>
+    </tr>
+    <tr>
+        <td><FONT COLOR="#F0FFF0">251,469</td>
+        <td><FONT COLOR="#FFF0F5">Apex Legends</td>
+</table>
+</BODY>
+</HTML>
+
+
+
+
+       
+
+
+
+
